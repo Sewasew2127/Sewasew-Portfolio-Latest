@@ -38,6 +38,4 @@ To deploy this website to GitHub Pages:
 - Replace placeholder images with your actual project screenshots
 - Update the contact links with your social media profiles
 
-## License
 
-This project is open source and available under the MIT License.
