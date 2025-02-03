@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewasew Hailu - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .timeline {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .timeline-item {
+            flex: 1;
+            margin: 20px;
+        }
+        .timeline-text {
+            position: relative;
+        }
+        .full-text {
+            display: none;
+        }
+        .read-more-btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .read-more-btn:hover {
+            background-color: #3e8e41;
+        }
+        .skills-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+        }
+        .skill-category {
+            margin: 20px;
+        }
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .skill-name {
+            font-weight: bold;
+        }
+        .skill-percentage {
+            font-size: 16px;
+            color: #666;
+        }
+        .skill-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .skill-progress {
+            width: 0;
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: width 1s;
+        }
+        .skill-progress-bg {
+            width: 100%;
+            height: 100%;
+            background-color: #4CAF50;
+        }
+        .soft-skills-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+        }
+        .soft-skill-category {
+            margin: 20px;
+        }
+        .soft-skill-items {
+            display: flex;
+            flex-direction: column;
+        }
+        .soft-skill-item {
+            margin-bottom: 20px;
+        }
+        .view-more-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .view-more-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .view-more-btn:hover {
+            background-color: #3e8e41;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">Sewasew Hailu </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#soft-skills">Soft Skills</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <h2>I am Sewasew Hailu</h2>
+            <p>
+                <span class="typewriter-text"></span>
+                <span class="cursor">|</span>
+            </p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="education-timeline">
+            <h3>Education</h3>
+            <div class="timeline">
+                <div class="timeline-start">
+                    <div class="timeline-point">
+                        <i class="fas fa-university"></i>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2012 - 2016</div>
+                    <div class="timeline-content">
+                        <h4>BSc in Computer Science</h4>
+                        <h5><a href="https://bdu.edu.et/" target="_blank">Bahir Dar University</a></h5>
+                        <div class="timeline-text">
+                            <p class="preview-text">Graduated with distinction, achieving a CGPA of 3.67/4.0. Bahir Dar University is one of Ethiopia's top-ranked institutions.</p>
+                            <p class="full-text">Graduated with distinction, achieving a CGPA of 3.67/4.0. Bahir Dar University is one of Ethiopia's top-ranked institutions, known for its excellence in technology and engineering education. The rigorous computer science program provided strong foundations in software development, algorithms, and computational thinking.</p>
+                            <button class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2023</div>
+                    <div class="timeline-content">
+                        <h4>MSc in Software Engineering</h4>
+                        <h5><a href="http://www.aau.edu.et/" target="_blank">Addis Ababa University</a></h5>
+                        <div class="timeline-text">
+                            <p class="preview-text">Completed all coursework at AAU, Ethiopia's premier institution of higher learning.</p>
+                            <p class="full-text">Completed all coursework at AAU, Ethiopia's premier institution of higher learning. The program focused on advanced software engineering principles, enterprise architecture, and modern development methodologies. While I completed all required courses, I chose to focus on my professional career before completing the thesis.</p>
+                            <button class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h4>Project Management Certificate</h4>
+                        <h5><a href="http://www.aau.edu.et/cbe/" target="_blank">AAU, College of Business and Economics</a></h5>
+                        <div class="timeline-text">
+                            <p class="preview-text">Completed an intensive 3-month training program in Project Management.</p>
+                            <p class="full-text">Completed an intensive 3-month training program in Project Management. The certification covered essential aspects of project planning, execution, monitoring, and control. This training enhanced my ability to lead software development projects effectively while maintaining scope, time, and quality constraints.</p>
+                            <button class="read-more-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-end">
+                    <div class="timeline-point">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h3>Certifications</h3>
+        <div class="cert-grid initial-items">
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/Nginx.jpg" alt="Web Server Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>Web Server Administration</h4>
+                    <h5>Udemy</h5>
+                    <p>Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization.</p>
+                    <a href="https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/BC-Certificate.jpeg" alt="Blockchain Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>Blockchain Development</h4>
+                    <h5>TechForDev-WTF</h5>
+                    <p>Specialized training in blockchain technology, focusing on development principles and practical implementations.</p>
+                    <a href="https://www.sololearn.com/Certificate/CT-YD0XY9Y1/png" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+
+          
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/PM.jpg" alt="Agile Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>Professional Agile and Scrum</h4>
+                    <h5>Udemy</h5>
+                    <p>Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration.</p>
+                    <a href="https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+         
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/Blockchain.png" alt="IBM Blockchain Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>Blockchain for Business</h4>
+                    <h5>IBM</h5>
+                    <p>Advanced understanding of blockchain technology and its business applications. Covered distributed ledger technology and smart contracts.</p>
+                    <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/2b30690c492d4b17b5eb5a9228319756" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cert-grid hidden-items hidden">
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/js.png" alt="JavaScript Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>JavaScript Development</h4>
+                    <h5>SoloLearn</h5>
+                    <p>In-depth study of JavaScript, including ES6+ features, async programming, and modern web development practices.</p>
+                    <a href="https://www.sololearn.com/Certificate/CT-VQUGXARL/png" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/API.png" alt="IBM API Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>API Development</h4>
+                    <h5>IBM</h5>
+                    <p>Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations.</p>
+                    <a href="https://www.credly.com/earner/earned/badge/367d2ad6-93cb-42dd-aa50-450f30ead9ee" class="cert-link" target="_blank">View Badge <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/Python.png" alt="Python Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>Python Programming</h4>
+                    <h5>SoloLearn</h5>
+                    <p>Mastered Python fundamentals, advanced concepts, and practical applications in software development. Includes data structures and algorithms.</p>
+                    <a href="https://www.sololearn.com/Certificate/CT-YD0XY9Y1/png" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image">
+                    <img src="img/php.jpg" alt="PHP Certificate">
+                </div>
+                <div class="cert-content">
+                    <h4>PHP Development</h4>
+                    <h5>SoloLearn</h5>
+                    <p>Comprehensive study of PHP programming, including modern practices, frameworks, and web application development.</p>
+                    <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="view-more-container">
+            <button class="view-more-btn" data-section="certifications">
+                <span class="view-more-text">View More</span>
+                <span class="view-less-text">View Less</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h3>Skills</h3>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">PHP</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">C</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Technologies & Frameworks</h4>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">MERN Stack</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">LAMP Stack</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">RESTful APIs</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Professional Skills</h4>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Agile & Scrum</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Project Management</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">CI/CD</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Cloud Deployment (AWS, Bare Metal)</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Security Best Practices</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88">
+                            <div class="skill-progress-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section id="soft-skills" class="soft-skills">
+        <h3>Soft Skills</h3>
+        <div class="soft-skills-container">
+            <div class="soft-skill-category">
+                <h4>Leadership & Management</h4>
+                <div class="soft-skill-items">
+                    <div class="soft-skill-item">
+                        <i class="fas fa-users"></i>
+                        <h5>Team Leadership</h5>
+                        <p>Leading development teams and coordinating cross-functional projects effectively.</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-tasks"></i>
+                        <h5>Project Management</h5>
+                        <p>Managing complex projects with strong organizational and planning skills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-skill-category">
+                <h4>Communication & Collaboration</h4>
+                <div class="soft-skills-items">
+                    <div class="soft-skill-item">
+                        <i class="fas fa-comments"></i>
+                        <h5>Technical Communication</h5>
+                        <p>Effectively explaining complex technical concepts to diverse audiences.</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-handshake"></i>
+                        <h5>Cross-functional Collaboration</h5>
+                        <p>Working seamlessly with different departments and stakeholders.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-skill-category">
+                <h4>Problem Solving</h4>
+                <div class="soft-skills-items">
+                    <div class="soft-skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h5>Analytical Thinking</h5>
+                        <p>Breaking down complex problems and developing innovative solutions.</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <i class="fas fa-clock"></i>
+                        <h5>Time Management</h5>
+                        <p>Efficiently managing multiple projects and meeting deadlines consistently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h3>Featured Projects</h3>
+        <div class="projects-container">
+            <div class="initial-items">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>GreSLERN - Digital Learning Resources Production Tool</h4>
+                         <div class="project-tags">
+                            <span class="tag">OSC</span>
+                            <span class="tag">Lead Developer</span>
+                            <!-- <span class="tag">React</span>
+                            <span class="tag">AWS</span> -->
+                        </div> 
+                  
+                       <p> GreSLERN is designed to reflect the transformation of education systems in
+                        the global south through Balanced and Inclusive Education under its 4 pillars:
+                        Intraculturalism, Transdisciplinarity, Dialecticism, and Contextuality, as well as
+                        to be part of accompanying Member States in bridging the techno-digital divide;
+                        establishing contextual education systems, which respond to national, local, and
+                        individual student priorities.</p>
+                        <div class="project-links">
+                            <a href="https://www.greslern.osc.int" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>CRUD REST API System</h4>
+                        <div class="project-tags">
+                            <span class="tag">Laravel 9</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <p>A robust REST API system built with Laravel 9, featuring comprehensive CRUD operations, authentication middleware, and detailed API documentation. The system includes rate limiting, caching mechanisms, and follows REST best practices. Implements OAuth2 authentication and includes automated testing suites.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sewasew2127/Laravel-CRUD-REST-API" class="project-link">
+                                <!-- <i class="fas fa-lock"></i> Private Repository -->
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden-items hidden">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>Addis Ababa SVG Maps</h4>
+                        <div class="project-tags">
+                            <span class="tag">SVG</span>
+                            <span class="tag">GIS</span>
+                            <span class="tag">Vector Graphics</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                        <p>Pioneered the first-ever comprehensive SVG map collection of Addis Ababa and its subcities. Prior to this project, there were no publicly available SVG format maps of Ethiopia's capital city. This groundbreaking work provides high-quality, scalable vector graphics for each subcity, enabling better digital mapping solutions for various applications. The maps are now publicly available for developers, researchers, and organizations.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sewasew2127/Addis-Ababa-SVG-maps" class="project-link">
+                                <i class="fas fa-map-marked-alt"></i> View Maps
+                            </a>
+                            <a href="https://github.com/Sewasew2127/Addis-Ababa-SVG-maps" class="project-link">
+                                <i class="fab fa-github"></i> GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Confidential Projects</h4>
+                        <p>A significant portion of my project portfolio includes highly confidential work developed at the Information Network Security Administration (INSA). These projects involve critical infrastructure and security systems that cannot be publicly disclosed due to their sensitive nature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <button class="view-more-btn" data-section="projects">
+                    <span class="view-more-text">View More Projects</span>
+                    <span class="view-less-text">View Less</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <!-- <div class="project-notice">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Confidential Projects</h4>
+                <p>A significant portion of my project portfolio includes highly confidential work developed at the Information Network Security Administration (INSA). These projects involve critical infrastructure and security systems that cannot be publicly disclosed due to their sensitive nature.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h3>Get In Touch</h3>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:sewasew.hailu@gmail.com">sewasew.hailu@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h4>LinkedIn</h4>
+                    <a href="https://linkedin.com/in/sewasew-hailu" target="_blank">Connect on LinkedIn</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/sewasew2127" target="_blank">View My Projects</a>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/movjwpob" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Sewasew Hailu. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup-notification">
+        <i class="fas"></i>
+        <div class="popup-content">
+            <div class="popup-title"></div>
+            <div class="popup-message"></div>
+        </div>
+        <div class="popup-progress">
+            <div class="popup-progress-bar"></div>
+        </div>
+    </div>
+
+    <script>
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const previewText = btn.previousElementSibling.previousElementSibling;
+                const fullText = btn.previousElementSibling;
+                if (previewText.style.display === 'none') {
+                    previewText.style.display = 'block';
+                    fullText.style.display = 'none';
+                    btn.textContent = 'Read More';
+                } else {
+                    previewText.style.display = 'none';
+                    fullText.style.display = 'block';
+                    btn.textContent = 'Read Less';
+                }
+            });
+        });
+    </script>
+    <script>
+        const skillProgressBars = document.querySelectorAll('.skill-progress');
+        skillProgressBars.forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            bar.style.width = `${progress}%`;
+        });
+    </script>
+    <script>
+        const viewMoreBtns = document.querySelectorAll('.view-more-btn');
+        viewMoreBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const section = btn.getAttribute('data-section');
+                const hiddenItems = document.querySelector(`.${section} .hidden-items`);
+                
+                if (hiddenItems.classList.contains('hidden')) {
+                    hiddenItems.classList.remove('hidden');
+                    btn.querySelector('.view-more-text').style.display = 'none';
+                    btn.querySelector('.view-less-text').style.display = 'block';
+                    btn.querySelector('i').style.transform = 'rotate(180deg)';
+                } else {
+                    hiddenItems.classList.add('hidden');
+                    btn.querySelector('.view-more-text').style.display = 'block';
+                    btn.querySelector('.view-less-text').style.display = 'none';
+                    btn.querySelector('i').style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+    </script>
+    <script>
+        const form = document.getElementById('contact-form');
+        const popup = document.querySelector('.popup-notification');
+        
+        function showNotification(type, title, message) {
+            // Reset animation
+            popup.style.display = 'flex';
+            void popup.offsetWidth; // Force reflow
+            
+            // Update popup content
+            popup.querySelector('.popup-title').textContent = title;
+            popup.querySelector('.popup-message').textContent = message;
+            
+            // Update classes and icon
+            popup.className = 'popup-notification ' + type;
+            const icon = popup.querySelector('i');
+            icon.className = 'fas ' + (type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle');
+            
+            // Show popup
+            setTimeout(() => popup.classList.add('show'), 100);
+            
+            // Hide popup after animation
+            setTimeout(() => {
+                popup.classList.remove('show');
+                setTimeout(() => popup.style.display = 'none', 300);
+            }, 3000);
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+            
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent';
+                submitBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+                form.reset();
+                
+                showNotification(
+                    'success',
+                    'Message Sent!',
+                    'Thank you for your message. I will get back to you soon!'
+                );
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            })
+            .catch(error => {
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed';
+                submitBtn.style.background = 'linear-gradient(135deg, #ff4444, #cc0000)';
+                
+                showNotification(
+                    'error',
+                    'Failed to Send',
+                    'Sorry, there was a problem sending your message. Please try again.'
+                );
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
