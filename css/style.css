@@ -592,25 +592,43 @@ section h3 {
 .certifications {
     background: #ffffff;
     padding: 4rem 2rem;
+    overflow: hidden;
 }
 
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.cert-container {
     max-width: 1400px;
-    margin: 2rem auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.cert-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 40s linear infinite;
+    width: fit-content;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .cert-card {
+    flex: 0 0 350px;
     background: white;
     border-radius: 15px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+}
+
+.cert-track:hover {
+    animation-play-state: paused;
 }
 
 .cert-card:hover {
@@ -619,30 +637,20 @@ section h3 {
 }
 
 .cert-image {
+    width: 100%;
     height: 200px;
     overflow: hidden;
-    position: relative;
-    background: linear-gradient(135deg, #6c5ce7, #a8e6cf);
+    border-radius: 15px 15px 0 0;
 }
 
 .cert-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.85;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.cert-card:hover .cert-image img {
-    opacity: 1;
-    transform: scale(1.05);
 }
 
 .cert-content {
     padding: 1.5rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 .cert-content h4 {
@@ -659,30 +667,28 @@ section h3 {
 
 .cert-content p {
     color: #666;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-    flex-grow: 1;
+    margin-bottom: 1rem;
 }
 
 .cert-link {
     display: inline-flex;
     align-items: center;
+    gap: 0.5rem;
     color: #6c5ce7;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    margin-top: auto;
-}
-
-.cert-link i {
-    margin-left: 0.5rem;
-    font-size: 0.9rem;
-    transition: transform 0.3s ease;
 }
 
 .cert-link:hover {
     color: #574bd6;
+}
+
+.cert-link i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
 }
 
 .cert-link:hover i {
@@ -690,18 +696,16 @@ section h3 {
 }
 
 @media (max-width: 768px) {
-    .cert-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        padding: 0 1rem;
+    .certifications {
+        padding: 3rem 1rem;
     }
-
-    .cert-image {
-        height: 180px;
+    
+    .cert-card {
+        flex: 0 0 300px;
     }
-
+    
     .cert-content {
-        padding: 1.25rem;
+        padding: 1.2rem;
     }
 }
 

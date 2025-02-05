@@ -113,6 +113,20 @@
         .hidden {
             display: none;
         }
+        .cert-container {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            padding: 20px;
+        }
+        .cert-track {
+            display: flex;
+            flex-direction: row;
+        }
+        .cert-card {
+            margin: 20px;
+            flex: 0 0 300px;
+        }
     </style>
 </head>
 <body>
@@ -211,112 +225,166 @@
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
         <h3>Certifications</h3>
-        <div class="cert-grid initial-items">
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/Nginx.jpg" alt="Web Server Certificate">
+        <div class="cert-container">
+            <div class="cert-track">
+                <!-- Original Set -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/Nginx.jpg" alt="Nginx Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>NGINX, Apache, SSL Encryption - Certification Course</h4>
+                        <h5>Udemy</h5>
+                        <p>Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization..</p>
+                        <a href="https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
-                <div class="cert-content">
-                    <h4>Web Server Administration</h4>
-                    <h5>Udemy</h5>
-                    <p>Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization.</p>
-                    <a href="https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/qa.jpg" alt="QA Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>Software Testing & Quality Assurance</h4>
+                        <h5>Udemy</h5>
+                        <p>Comprehensive training in software testing methodologies, test automation, and quality assurance practices.</p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/PM.jpg" alt="QA Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>Professional Certificate in Agile and SCRUM</h4>
+                        <h5>Udemy</h5>
+                        <p>Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration..</p>
+                        <a href="https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/js.png" alt="JavaScript Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>JavaScript Development</h4>
+                        <h5>SoloLearn</h5>
+                        <p>Comprehensive study of JavaScript programming, including modern ES6+ features and best practices.</p>
+                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/php.jpg" alt="PHP Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>PHP Development</h4>
+                        <h5>SoloLearn</h5>
+                        <p>Comprehensive study of PHP programming, including modern practices, frameworks, and web application development.</p>
+                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/BC-Certificate.jpeg" alt="Blockchain Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>Blockchain Development</h4>
+                        <h5>Udemy</h5>
+                        <p>Specialized training in blockchain technology, focusing on development principles and practical implementations.</p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/API.png" alt="API Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>API Development</h4>
+                        <h5>IBM</h5>
+                        <p>  Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations..</p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+               
+                <!-- Duplicate Set for Continuous Loop -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/Nginx.jpg" alt="React Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>NGINX, Apache, SSL Encryption - Certification Course</h4>
+                        <h5>Udemy</h5>
+                        <p>Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization..</p>
+                        <a href="https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/qa.jpg" alt="QA Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>Software Testing & Quality Assurance</h4>
+                        <h5>Udemy</h5>
+                        <p>Comprehensive training in software testing methodologies, test automation, and quality assurance practices.</p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/PM.jpg" alt="QA Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>Professional Certificate in Agile and SCRUM</h4>
+                        <h5>Udemy</h5>
+                        <p>Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration..</p>
+                        <a href="https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/js.png" alt="JavaScript Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>JavaScript Development</h4>
+                        <h5>SoloLearn</h5>
+                        <p>Comprehensive study of JavaScript programming, including modern ES6+ features and best practices.</p>
+                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/php.jpg" alt="PHP Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>PHP Development</h4>
+                        <h5>SoloLearn</h5>
+                        <p>Comprehensive study of PHP programming, including modern practices, frameworks, and web application development.</p>
+                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/BC-Certificate.jpeg" alt="Blockchain Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>Blockchain Development</h4>
+                        <h5>Udemy</h5>
+                        <p>Specialized training in blockchain technology, focusing on development principles and practical implementations.</p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="img/API.png" alt="API Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>API Development</h4>
+                        <h5>IBM</h5>
+                        <p>  Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations..</p>
+                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/BC-Certificate.jpeg" alt="Blockchain Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>Blockchain Development</h4>
-                    <h5>TechForDev-WTF</h5>
-                    <p>Specialized training in blockchain technology, focusing on development principles and practical implementations.</p>
-                    <a href="https://www.sololearn.com/Certificate/CT-YD0XY9Y1/png" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            
-
-          
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/PM.jpg" alt="Agile Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>Professional Agile and Scrum</h4>
-                    <h5>Udemy</h5>
-                    <p>Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration.</p>
-                    <a href="https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-         
-
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/Blockchain.png" alt="IBM Blockchain Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>Blockchain for Business</h4>
-                    <h5>IBM</h5>
-                    <p>Advanced understanding of blockchain technology and its business applications. Covered distributed ledger technology and smart contracts.</p>
-                    <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/2b30690c492d4b17b5eb5a9228319756" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="cert-grid hidden-items hidden">
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/js.png" alt="JavaScript Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>JavaScript Development</h4>
-                    <h5>SoloLearn</h5>
-                    <p>In-depth study of JavaScript, including ES6+ features, async programming, and modern web development practices.</p>
-                    <a href="https://www.sololearn.com/Certificate/CT-VQUGXARL/png" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/API.png" alt="IBM API Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>API Development</h4>
-                    <h5>IBM</h5>
-                    <p>Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations.</p>
-                    <a href="https://www.credly.com/earner/earned/badge/367d2ad6-93cb-42dd-aa50-450f30ead9ee" class="cert-link" target="_blank">View Badge <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/Python.png" alt="Python Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>Python Programming</h4>
-                    <h5>SoloLearn</h5>
-                    <p>Mastered Python fundamentals, advanced concepts, and practical applications in software development. Includes data structures and algorithms.</p>
-                    <a href="https://www.sololearn.com/Certificate/CT-YD0XY9Y1/png" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <div class="cert-image">
-                    <img src="img/php.jpg" alt="PHP Certificate">
-                </div>
-                <div class="cert-content">
-                    <h4>PHP Development</h4>
-                    <h5>SoloLearn</h5>
-                    <p>Comprehensive study of PHP programming, including modern practices, frameworks, and web application development.</p>
-                    <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="view-more-container">
-            <button class="view-more-btn" data-section="certifications">
-                <span class="view-more-text">View More</span>
-                <span class="view-less-text">View Less</span>
-                <i class="fas fa-chevron-down"></i>
-            </button>
         </div>
     </section>
 
