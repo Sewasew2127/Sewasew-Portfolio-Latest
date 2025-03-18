@@ -32,6 +32,25 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px #3498db, 0 0 40px #022943;
+    animation: glow-border 1.5s infinite alternate;
+    margin: 0 auto;
+    display: block;
+}
+
+@keyframes glow-border {
+    from {
+        box-shadow: 0 0 20px #3498db, 0 0 40px #022943;
+    }
+    to {
+        box-shadow: 0 0 40px #3498db, 0 0 80px #022943;
+    }
+}
 
 .logo {
     font-size: 1.5rem;
@@ -50,7 +69,7 @@ nav {
 
 .nav-links li a {
     position: relative;
-    color: #fff;
+    color: #3498db;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
