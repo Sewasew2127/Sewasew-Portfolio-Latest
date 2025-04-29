@@ -19,7 +19,7 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#soft-skills">Soft Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -224,7 +224,7 @@
 
                 <div class="skill-item">
                     <div class="skill-info">
-                        <span class="skill-name">MongoDB</span>
+                        <span class="skill-name">DevOps</span>
                         <span class="skill-percentage">85%</span>
                     </div>
                     <div class="skill-bar">
@@ -391,7 +391,7 @@
                             </a>
                         </div>
                         
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7249446308854325248?collapsed=1" height="669" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                            <!-- <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7249446308854325248?collapsed=1" height="669" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe> -->
                         
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                             <span class="tag">LangChain</span>
                         </div>
                         <p>A sophisticated conversational AI application that enables users to have interactive discussions about any webpage's content. Built with Python and Streamlit, this project implements Retrieval-Augmented Generation (RAG) using the Mistral language model.</p>
-                        <p>Key Features:
+                        <p>Key Features: a
                             <ul style="list-style-type: disc; padding-left: 30px; line-height: 1.6; color: #333; font-size: 0.9em;">
                                 <li>Dynamic webpage content processing and vectorization</li>
                                 <li>Contextual conversation memory that maintains dialogue coherence</li>
@@ -488,6 +488,24 @@
         </div>
     </section>
 
+    <!--Gallary Section-->
+    <section id="gallery" class="gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-container">
+            <div class="gallery-viewer">
+                <button class="gallery-btn prev-btn">&lt;</button>
+                <div class="gallery-image-wrapper">
+                    <img id="gallery-image" src="" alt="Gallery Image">
+                    <div class="overlay" id="gallery-caption"></div>
+                </div>
+                <button class="gallery-btn next-btn">&gt;</button>
+            </div>
+            <div class="gallery-counter">
+                <span id="current-image">1</span> / <span id="total-images">0</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h3>Get In Touch</h3>
@@ -546,6 +564,7 @@
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -662,6 +681,46 @@
     
     document.addEventListener("DOMContentLoaded", renderCertifications);
     </script>
+    <script>
+          const galleryImages = [
+{ src: "img/gallary/group2.jpg", caption: "GreSLERN Launch Day" },
+{ src: "img/gallary/sg.jpg", caption: "With H.E S.G of OSC" },
+{ src: "img/gallary/post.jpg", caption: "Social Media Posts" },
+{ src: "img/gallary/gres1.jpg", caption: "Demonstration of GreSLERN on the Launch day" },
+
+{ src: "img/gallary/training2.jpg", caption: "Training in the OSC BIE institute" },
+{ src: "img/gallary/training3.jpg", caption: "Training in the OSC BIE institute" }
+];
+
+let currentIndex = 0;
+
+function updateGallery() {
+    const galleryImage = document.getElementById("gallery-image");
+    const galleryCaption = document.getElementById("gallery-caption");
+    const currentImage = document.getElementById("current-image");
+    const totalImages = document.getElementById("total-images");
+
+    galleryImage.src = galleryImages[currentIndex].src;
+    galleryCaption.textContent = galleryImages[currentIndex].caption;
+    currentImage.textContent = currentIndex + 1;
+    totalImages.textContent = galleryImages.length;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateGallery();
+
+    document.querySelector(".prev-btn").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateGallery();
+    });
+
+    document.querySelector(".next-btn").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        updateGallery();
+    });
+});
+    </script>
+  
    
    
    
