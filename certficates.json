@@ -1,0 +1,17 @@
+   [
+    {
+        "image": "img/devOpsProf.png",
+       " title": "Docker: Build, Run, and Manage Containers",
+       " provider": "Linkedin Learning",
+       " description": "Continuous Integration and Continuous Delivery (CI/CD), DevOps, Infrastructure as Code (IaC).",
+        "link": "https://www.linkedin.com/learning/certificates/7c133780480577c52d43bf7c04e5c8c1863474040f2d43e15b7f40155ae9c7eb"
+    },
+    {
+        "image": "img/AI-RAG.jpg",
+        "title": "AI Prompt Engineering and RAG for Software Engineers",
+        "provider": "Udemy",
+        "description": "Master AI applications through effective prompt engineering techniques.",
+        "link": "https://www.udemy.com/certificate/UC-fbb2176d-79fb-4656-9821-fb180ab69198/"
+    }
+    
+]

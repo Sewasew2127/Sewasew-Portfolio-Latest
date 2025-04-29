@@ -6,128 +6,7 @@
     <title>Sewasew Hailu - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .timeline {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .timeline-item {
-            flex: 1;
-            margin: 20px;
-        }
-        .timeline-text {
-            position: relative;
-        }
-        .full-text {
-            display: none;
-        }
-        .read-more-btn {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .read-more-btn:hover {
-            background-color: #3e8e41;
-        }
-        .skills-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 20px;
-        }
-        .skill-category {
-            margin: 20px;
-        }
-        .skill-item {
-            margin-bottom: 10px;
-        }
-        .skill-info {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-        .skill-name {
-            font-weight: bold;
-        }
-        .skill-percentage {
-            font-size: 16px;
-            color: #666;
-        }
-        .skill-bar {
-            width: 100%;
-            height: 10px;
-            background-color: #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .skill-progress {
-            width: 0;
-            height: 100%;
-            background-color: #4CAF50;
-            border-radius: 5px;
-            transition: width 1s;
-        }
-        .skill-progress-bg {
-            width: 100%;
-            height: 100%;
-            background-color: #4CAF50;
-        }
-        .soft-skills-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 20px;
-        }
-        .soft-skill-category {
-            margin: 20px;
-        }
-        .soft-skill-items {
-            display: flex;
-            flex-direction: column;
-        }
-        .soft-skill-item {
-            margin-bottom: 20px;
-        }
-        .view-more-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .view-more-btn {
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .view-more-btn:hover {
-            background-color: #3e8e41;
-        }
-        .hidden {
-            display: none;
-        }
-        .cert-container {
-            display: flex;
-            flex-direction: row;
-            overflow-x: auto;
-            padding: 20px;
-        }
-        .cert-track {
-            display: flex;
-            flex-direction: row;
-        }
-        .cert-card {
-            margin: 20px;
-            flex: 0 0 300px;
-        }
-    </style>
+
 </head>
 <body>
     <!-- Header Section -->
@@ -233,211 +112,10 @@
     <section id="certifications" class="certifications">
         <h3>Certifications</h3>
         <div class="cert-container">
-            <div class="cert-track">
-                <!-- Original Set -->
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/AI-RAG.jpg" alt="AI-RAG Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>AI Prompt Engineering and RAG for Software Engineers</h4>
-                        <h5>Udemy</h5>
-                        <p>Master AI applications through effective prompt engineering techniques.</p>
-                        <a href="https://www.udemy.com/certificate/UC-fbb2176d-79fb-4656-9821-fb180ab69198/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/Docker2.png" alt="Docker Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Docker: Build, Run, and Manage Containers</h4>
-                        <h5>Linkedin Learning</h5>
-                        <p>Understood how to create custom container images using Dockerfiles. Troubleshoot common container issues using Docker CLI commands. Understood Best practices and problems when working iwth Docker containers and images.</p>
-                        <a href="https://www.linkedin.com/learning/certificates/6e62b70abcc2cf28c288c02b1a11254e300ba4cbb250cdcf7c9adc761688d9be?trk=share_certificate" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/Nginx.jpg" alt="Nginx Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>NGINX, Apache, SSL Encryption - Certification Course</h4>
-                        <h5>Udemy</h5>
-                        <p>Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization..</p>
-                        <a href="https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/qa.jpg" alt="QA Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Software Testing & Quality Assurance</h4>
-                        <h5>Udemy</h5>
-                        <p>Comprehensive training in software testing methodologies, test automation, and quality assurance practices.</p>
-                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/PM.jpg" alt="QA Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Professional Certificate in Agile and SCRUM</h4>
-                        <h5>Udemy</h5>
-                        <p>Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration..</p>
-                        <a href="https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/js.png" alt="JavaScript Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>JavaScript Development</h4>
-                        <h5>SoloLearn</h5>
-                        <p>Comprehensive study of JavaScript programming, including modern ES6+ features and best practices.</p>
-                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/php.jpg" alt="PHP Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>PHP Development</h4>
-                        <h5>SoloLearn</h5>
-                        <p>Comprehensive study of PHP programming, including modern practices, frameworks, and web application development.</p>
-                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/BC-Certificate.jpeg" alt="Blockchain Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Blockchain Development</h4>
-                        <h5>Udemy</h5>
-                        <p>Specialized training in blockchain technology, focusing on development principles and practical implementations.</p>
-                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/API.png" alt="API Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>API Development</h4>
-                        <h5>IBM</h5>
-                        <p>  Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations..</p>
-                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-               
-                <!-- Duplicate Set for Continuous Loop -->
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/AI-RAG.jpg" alt="AI-RAG Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>AI Prompt Engineering and RAG for Software Engineers</h4>
-                        <h5>Udemy</h5>
-                        <p>Master AI applications through effective prompt engineering techniques. </p>
-                        <a href="https://www.udemy.com/certificate/UC-fbb2176d-79fb-4656-9821-fb180ab69198/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/Docker2.png" alt="Docker Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Docker: Build, Run, and Manage Containers</h4>
-                        <h5>Linkedin Learning</h5>
-                        <p>Understood how to create custom container images using Dockerfiles. Troubleshoot common container issues using Docker CLI commands. Understood Best practices and problems when working iwth Docker containers and images.</p>
-                        <a href="https://www.linkedin.com/learning/certificates/6e62b70abcc2cf28c288c02b1a11254e300ba4cbb250cdcf7c9adc761688d9be?trk=share_certificate" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/Nginx.jpg" alt="React Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>NGINX, Apache, SSL Encryption - Certification Course</h4>
-                        <h5>Udemy</h5>
-                        <p>Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization..</p>
-                        <a href="https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/qa.jpg" alt="QA Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Software Testing & Quality Assurance</h4>
-                        <h5>Udemy</h5>
-                        <p>Comprehensive training in software testing methodologies, test automation, and quality assurance practices.</p>
-                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/PM.jpg" alt="QA Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Professional Certificate in Agile and SCRUM</h4>
-                        <h5>Udemy</h5>
-                        <p>Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration..</p>
-                        <a href="https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/js.png" alt="JavaScript Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>JavaScript Development</h4>
-                        <h5>SoloLearn</h5>
-                        <p>Comprehensive study of JavaScript programming, including modern ES6+ features and best practices.</p>
-                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/php.jpg" alt="PHP Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>PHP Development</h4>
-                        <h5>SoloLearn</h5>
-                        <p>Comprehensive study of PHP programming, including modern practices, frameworks, and web application development.</p>
-                        <a href="https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/BC-Certificate.jpeg" alt="Blockchain Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>Blockchain Development</h4>
-                        <h5>Udemy</h5>
-                        <p>Specialized training in blockchain technology, focusing on development principles and practical implementations.</p>
-                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-image">
-                        <img src="img/API.png" alt="API Certificate">
-                    </div>
-                    <div class="cert-content">
-                        <h4>API Development</h4>
-                        <h5>IBM</h5>
-                        <p>  Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations..</p>
-                        <a href="#" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
+            <div id="cert-track" class="cert-track"></div>
         </div>
     </section>
+  
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -712,6 +390,9 @@
                                 <i class="fas fa-external-link-alt"></i> View Project
                             </a>
                         </div>
+                        
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7249446308854325248?collapsed=1" height="669" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                        
                     </div>
                 </div>
 
@@ -881,7 +562,110 @@
         </div>
     </div>
 
+   
     <script>
+        const certifications = [
+        {
+            image: "img/devOpsProf.png",
+            title: "Docker: Build, Run, and Manage Containers",
+            provider: "Linkedin Learning",
+            description: "Continuous Integration and Continuous Delivery (CI/CD), DevOps, Infrastructure as Code (IaC).",
+            link: "https://www.linkedin.com/learning/certificates/7c133780480577c52d43bf7c04e5c8c1863474040f2d43e15b7f40155ae9c7eb"
+        },
+        {
+            image: "img/Docker2.png",
+            title: "Docker: Build, Run, and Manage Containers",
+            provider: "Linkedin Learning",
+            description: "Understood how to create custom container images using Dockerfiles. Troubleshoot common container issues using Docker CLI commands. Understood Best practices and problems when working iwth Docker containers and images.",
+            link: "https://www.linkedin.com/learning/certificates/6e62b70abcc2cf28c288c02b1a11254e300ba4cbb250cdcf7c9adc761688d9be?trk=share_certificate"
+        },
+        {
+            image: "img/AI-RAG.jpg",
+            title: "AI Prompt Engineering and RAG for Software Engineers",
+            provider: "Udemy",
+            description: "Master AI applications through effective prompt engineering techniques.",
+            link: "https://www.udemy.com/certificate/UC-fbb2176d-79fb-4656-9821-fb180ab69198/"
+        },
+        {
+            image: "img/PM.jpg",
+            title: "Professional Certificate in Agile and SCRUM",
+            provider: "Udemy",
+            description: "Comprehensive training in Agile methodologies and Scrum framework. Learned sprint planning, backlog management, and team collaboration.",
+            link: "https://www.udemy.com/certificate/UC-46f8e51d-77f0-47e3-b473-94ec433dfcdc/"
+        }, 
+           
+        {
+            image: "img/Nginx.jpg",
+            title: "NGINX, Apache, SSL Encryption - Certification Course",
+            provider: "Udemy",
+            description: "Mastered Nginx, Apache configuration, and SSL encryption. Includes security best practices and performance optimization.",
+            link: "https://www.udemy.com/certificate/UC-735f069b-c044-4795-a7f1-a9eecd5c98a9/"
+        }, 
+        {
+            image: "img/qa.jpg",
+            title: "Software Testing & Quality Assurance",
+            provider: "Udemy",
+            description: "Comprehensive training in software testing methodologies, test automation, and quality assurance practices.",
+            link: "#"
+        }, 
+       
+        {
+            image: "img/API.png",
+            title:"API Developmen",
+            provider:"IBM",
+            description:"Comprehensive training in REST API design, development, and best practices. Learned industry standards for API documentation and security implementations.", 
+            link:""
+        },
+        {
+            image:"img/BC-Certificate.jpeg",
+            title:"Blockchain Development",
+            provider:"Tec4Dev Women's Fellowship",
+            description:"Specialized training in blockchain technology, focusing on development principles and practical implementations. Covered smart contracts, consensus algorithms, and decentralized applications (dApps).", 
+            link:""
+        },
+        {
+            image:"img/php.jpg",
+            title:"PHP Development",
+            provider:"SoloLearn",
+            description:"Comprehensive study of PHP programming, including modern practices, frameworks, and web application development", 
+            link:"https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg"
+        },
+        {
+            image:"img/js.png",
+            title:"JavaScript Development",
+            provider:"SoloLearn",
+            description:"Comprehensive study of JavaScript programming, including modern ES6+ features and best practices.", 
+            link:"https://www.sololearn.com/Certificate/CT-R7K9FL0T/jpg"
+        }
+        
+    ];
+    
+    function renderCertifications() {
+        const certTrack = document.getElementById("cert-track");
+        certifications.forEach(cert => {
+            const certCard = `
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="${cert.image}" alt="${cert.title} Certificate">
+                    </div>
+                    <div class="cert-content">
+                        <h4>${cert.title}</h4>
+                        <h5>${cert.provider}</h5>
+                        <p>${cert.description}</p>
+                        <a href="${cert.link}" class="cert-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            `;
+            certTrack.innerHTML += certCard;
+        });
+    }
+    
+    document.addEventListener("DOMContentLoaded", renderCertifications);
+    </script>
+   
+   
+   
+   <script>
         const readMoreBtns = document.querySelectorAll('.read-more-btn');
         readMoreBtns.forEach(btn => {
             btn.addEventListener('click', () => {
